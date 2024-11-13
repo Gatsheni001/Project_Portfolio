@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Thato Ndlovu</title>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="./assets/Css.css">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="images/vid2.mp4" type="video/mp4">
+        
+    </video>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="navbar-list" id="navbar-list">
+            <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+            <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+            <li class="navbar-item"><a href="#Projects" class="navbar-link">Projects</a></li>
+           
+           
+        </ul>
+    </nav>
+
+    <!-- Grid Layout: Sidebar + Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="info-content">
+                <figure class="avatar-box">
+                    <img src="images/me2.jpg" alt="Thato Theophelus Ndlovu" width="80">
+                </figure>
+                <div class="grid-container">
+                    <h1 class="name">Thato Theophelus Ndlovu</h1>
+                    <p class="title">Software Developer</p>
+                    <p>
+                        I’m passionate about technology and constantly improving my skills. 
+                        With a diploma in Software Development and IT, 
+                        I’m gaining hands-on experience as a Data Engineering candidate at Capaciti. 
+                        Outside of work, I volunteer at my local church, attend tech workshops,
+                         and explore entrepreneurial ventures. I thrive on collaboration and embrace
+                          challenges that push me to grow.
+                    </p>
+                    <br>
+                    <div class="separator"></div>
+                </div>
+                
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box"><i class="material-icons">email</i></div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:thatondlovu125@gmail.com" class="contact-link">thatondlovu125@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box"><i class="material-icons">phone</i></div>
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+                            <a href="tel:+27737713306" class="contact-link">+27 73 771 3306</a>
+                        </div>
+                      </li>
+                    <li class="contact-item">
+                        <div class="icon-box"><i class="material-icons">location_on</i></div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <a href="https://www.google.com/maps/place/Johannesburg,+Gauteng" class="contact-link">Johannesburg, South Africa</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <br>
+               
+                <a href="images/CV of Thato Ndlovu (3).pdf (18).pdf" download="Thato_Ndlovu_CV" class="btn-info">
+                  <button class="btn_info"><span>Download CV</span></button>
+                </a>
+                <br>
+
+                <ul class="social-list">
+                    <li class="social-item"><a href="https://github.com/Gatsheni001" class="social-link"><i class="fab fa-github"></i></a></li>
+                    <li class="social-item"><a href="https://www.linkedin.com/in/thato-theophelus-ndlovu-108550262" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="social-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <article class="about active" id="about">
+                <header>
+                    <h2 class="h2 article-title">Projects</h2>
+                </header>
+                <section class="about-text">
+                    <p>
+                        Welcome to my GitHub portfolio! Here, you’ll find a collection
+                         of projects that showcase my skills in software development, 
+                         innovation, and problem-solving. With experience in various programming languages,
+                          frameworks, and platforms, each project represents a unique challenge that I’ve approached with 
+                          creativity and precision. 
+                        My focus is on delivering high-quality solutions that drive results and showcase versatility,
+                </section>
+
+                <section id="Projects">
+                    
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Bantu_Health</h2>
+                            <p>
+                                Bantu Health is a revolutionary health app that empowers users by providing instant medical diagnosis using cutting-edge AI technology.
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <a href="https://github.com/Gatsheni001/Bantu_Health" target="_blank">
+                              <button class="btn_info"><span>Project...</span></button>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Banking Console Application</h2>
+                            <p>
+                                A C# console app for managing accounts, checking balances, making transactions, and viewing history through a secure interface.
+                            </p>
+                            <br>
+                            <a href="https://github.com/Gatsheni001/BankSyst" target="_blank">
+                              <button class="btn_info"><span>Project...</span></button>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Sneaker Snaps</h2>
+                            <p>
+                                An app for sneaker enthusiasts to track their favorite pairs and set goals for acquiring more.
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <a href="https://github.com/Gatsheni001/SneakerSnap" target="_blank">
+                              <button class="btn_info"><span>Project...</span></button>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <i class="fa-solid fa-tools"></i>
+                            <h2>TFEX IT Solutions</h2>
+                            <p>
+                                TFEX IT Solutions offers system maintenance and troubleshooting services for clients in Pretoria, 
+                                ensuring smooth and efficient operations. Trust us as your reliable IT partner.
+                            </p>
+                            <br>
+                            <a href="https://tfex-it-solution.vercel.app" target="_blank">
+                              <button class="btn_info"><span>Project...</span></button>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <i class="fa-solid fa-tools"></i>
+                            <h2>Medical Suites</h2>
+                            <p>
+                                Medical Suite is a booking appointment system designed to improve healthcare service delivery. 
+                                It allows patients to book appointments online, making the process more convenient and efficient.
+                            </p>
+                            <a href="https://medical-suite.netlify.app" target="_blank">
+                              <button class="btn_info"><span>Project...</span></button>
+                            </a>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Python Projects</h2>
+                            <p>Coming Soon!!!!</p>
+                            <p>Thank you for your patience</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Java Projects</h2>
+                            <p>Coming Soon!</p>
+                            <p>Thank you for your patience</p>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Data Engineering Projects</h2>
+                            <p>Coming Soon!</p>
+                            <p>Thank you for your patience.</p>
+                        </div>
+                        
+                        
+                    </div>
+                </section>
+             
+                  
+            </article>
+        </div>
+    </div>
+    <section>
+        <h1>SKILLS</h1>
+        <div class="skill-container">
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <div class="skill-name">Python</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-java"></i>
+                </div>
+                <div class="skill-name">Java</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="skill-name">JavaScript</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-code"></i> <!-- Alternative for C# -->
+                </div>
+                <div class="skill-name">C#</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="skill-name">React</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-android"></i> <!-- Alternative for Kotlin -->
+                </div>
+                <div class="skill-name">Kotlin</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-php"></i>
+                </div>
+                <div class="skill-name">PHP</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-database"></i> <!-- Alternative for MySQL -->
+                </div>
+                <div class="skill-name">MySQL</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-envira"></i> <!-- Alternative for MongoDB -->
+                </div>
+                <div class="skill-name">MongoDB</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-microsoft"></i> <!-- Alternative for Microsoft Azure -->
+                </div>
+                <div class="skill-name">Azure</div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+          <div class="footer-section">
+            <p>©2024 Thato Theophelus Ndlovu, LLC. All Rights Reserved.</p> 
+      </div>
+     
+      </div>
+  </footer>
+
+
+
+    <!-----------Java Script-->
+    <script>
+// Scroll event for sticky and centered navbar
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+
+    // Toggle sticky class based on scroll position
+    if (window.pageYOffset > 0) {
+        navbar.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky');
+    }
+
+    // Toggle centered class based on scroll offset
+    if (window.scrollY > 50) { // Adjust as needed
+        navbar.classList.add('centered');
+    } else {
+        navbar.classList.remove('centered');
+    }
+});
+
+// Toggle mobile menu
+const hamburger = document.getElementById('hamburger');
+const navbarList = document.getElementById('navbar-list');
+
+// Toggle menu visibility on hamburger click
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active'); // For hamburger animation
+    navbarList.classList.toggle('active'); // Show/hide menu
+});
+
+// Close mobile menu on link click
+const navbarLinks = document.querySelectorAll('.navbar-link');
+
+navbarLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbarList.classList.remove('active');
+        hamburger.classList.remove('active'); // Reset hamburger animation
+    });
+});
+
+// Chart.js setup
+const chartContext = document.getElementById('skillsChart').getContext('2d');
+let skillsChart = new Chart(chartContext, {
+    type: 'bar',
+    data: {
+        labels: [
+            'HTML/CSS', 'JavaScript', 'CSS', 'PHP', 
+            'Java', 'C#', 'kotlin', 'MySQL', 'SQL Server'
+        ],
+        datasets: [{
+            label: 'Skill Level',
+            data: [95, 90, 85, 80, 85, 80, 70, 75],
+            backgroundColor: 'rgba(107, 70, 193, 0.5)',
+            borderColor: 'rgba(107, 70, 193, 1)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: 100
+            }
+        }
+    }
+});
+
+// Update chart with new skill values
+function updateChart() {
+    const newValues = [
+        parseInt(document.getElementById('html-css').value) || 0,
+        parseInt(document.getElementById('javascript').value) || 0,
+        parseInt(document.getElementById('css').value) || 0,
+        parseInt(document.getElementById('php').value) || 0,
+        parseInt(document.getElementById('java').value) || 0,
+        parseInt(document.getElementById('c#').value) || 0,
+        parseInt(document.getElementById('kotlin').value) || 0,
+        parseInt(document.getElementById('mysql').value) || 0,
+        parseInt(document.getElementById('sql-server').value) || 0
+    ];
+
+    skillsChart.data.datasets[0].data = newValues;
+    skillsChart.update();
+}
+
+
+    </script>
+</body>
+</html>
