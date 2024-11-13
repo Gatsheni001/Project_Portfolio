@@ -98,6 +98,7 @@
                     <li class="social-item"><a href="https://www.linkedin.com/in/thato-theophelus-ndlovu-108550262" class="social-link"><i class="fab fa-linkedin"></i></a></li>
                     <li class="social-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
                 </ul>
+                <div id="live-clock" class="live-clock"></div>
             </div>
         </aside>
 
@@ -117,7 +118,7 @@
                         My focus is on delivering high-quality solutions that drive results and showcase versatility,
                 </section>
 
-                <section id="Projects">
+                <section id="Projects" class="left-align">
                     
                     <div class="services-list">
                         <div>
@@ -280,6 +281,12 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container fade-in">
+            <div id="time"></div>
+            <div id="date"></div>
+        </div>
+    </section>
 
     <br>
     <!-- Footer -->
@@ -288,11 +295,11 @@
           <div class="footer-section">
             <p>©2024 Thato Theophelus Ndlovu, LLC. All Rights Reserved.</p> 
       </div>
-     
+      <div id="live-time" class="footer-section"></div>
       </div>
   </footer>
 
-
+    <div class="clock" id="clock"></div>
 
     <!-----------Java Script-->
     <script>
@@ -335,52 +342,20 @@ navbarLinks.forEach(link => {
     });
 });
 
-// Chart.js setup
-const chartContext = document.getElementById('skillsChart').getContext('2d');
-let skillsChart = new Chart(chartContext, {
-    type: 'bar',
-    data: {
-        labels: [
-            'HTML/CSS', 'JavaScript', 'CSS', 'PHP', 
-            'Java', 'C#', 'kotlin', 'MySQL', 'SQL Server'
-        ],
-        datasets: [{
-            label: 'Skill Level',
-            data: [95, 90, 85, 80, 85, 80, 70, 75],
-            backgroundColor: 'rgba(107, 70, 193, 0.5)',
-            borderColor: 'rgba(107, 70, 193, 1)',
-            borderWidth: 1
-        }]
-    },
-    options: {
-        responsive: true,
-        scales: {
-            y: {
-                beginAtZero: true,
-                max: 100
-            }
-        }
-    }
-});
 
-// Update chart with new skill values
-function updateChart() {
-    const newValues = [
-        parseInt(document.getElementById('html-css').value) || 0,
-        parseInt(document.getElementById('javascript').value) || 0,
-        parseInt(document.getElementById('css').value) || 0,
-        parseInt(document.getElementById('php').value) || 0,
-        parseInt(document.getElementById('java').value) || 0,
-        parseInt(document.getElementById('c#').value) || 0,
-        parseInt(document.getElementById('kotlin').value) || 0,
-        parseInt(document.getElementById('mysql').value) || 0,
-        parseInt(document.getElementById('sql-server').value) || 0
-    ];
+    // Clock functionality for both locations
+      function updateClock() {
+          const now = new Date();
+          const timeString = now.toLocaleTimeString();
+          const dateString = now.toLocaleDateString();
 
-    skillsChart.data.datasets[0].data = newValues;
-    skillsChart.update();
-}
+          document.getElementById('live-clock').textContent = timeString;
+          document.getElementById('time').textContent = timeString;
+          document.getElementById('date').textContent = dateString;
 
+      }
+
+      setInterval(updateClock, 1000);
 
     </script>
 </body>
